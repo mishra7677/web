@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Luxie'; /* Name your font */
+    src: url('../font/Luxie/Luxie\ Rounded.ttf');
+  }
+
+  @font-face {
+    font-family: 'neo'; /* Name your font */
+    src: url('../font/streamster/Streamster.ttf');
+  }
+
+  @font-face {
+    font-family: 'popins-m'; /* Name your font */
+    src: url('../font/Poppins/Poppins-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'robo-m'; /* Name your font */
+    src: url('../font/Roboto/Roboto-Medium.ttf');
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+  .header-div{
+    background-color: #E2D4C9;
+    
+    border: 1px solid #bcb8b8;
+    border-radius: 5px;
+    opacity: 0.7;
+    align-items: center;
+
+  }
+/* style the nav bar */
+.nav{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 0 0;
+}
+#nav-link{
+  display: flexbox;
+  
+}
+/* style unordered list of the navbar */
+#nav-link ul{
+  text-decoration: none;
+  display: flex;
+  /* background-color: aqua; */
+  gap: 0.9vw;
+  list-style: none;
+  padding:0 1vw;
+}
+#nav-link ul li{
+  display: flex;
+}
+#nav-link ul li a{
+  font-family: robo-m;
+  font-weight: 200;
+  display: flex;
+  text-decoration:  none;
+
+}
+
+#search-box{
+  margin-left: 10vw;
+  display: inline-flex;
+}
+
+#search-box form input{
+  display: inline-flex;
+  width:auto;
+  font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 0.8em;
+  background-color:#b57b06;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  opacity:1;
+  align-items: center;
+}
+#search-box form #search{
+  background-color:white;
+  display: inline-flex;
+  width:20vw;
+  height: 3vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  opacity: 0.7;
+  align-items: center;
+
+
+}
+
+/* style logo  */
+.nav h2{
+  display:inline-table;
+  margin: 0;
+}
+
+.nav h2 #f{
+  font-size:3vw;
+  font-family: neo ;
+  color: aqua;
+  opacity: 0.7;
+  padding-left: 1em;
+}
+.nav h2 #x{
+  font-size:1.53vw;
+  font-family: neo ;
+  color:gray;
+  opacity: 0.8;
+  padding-left:8px;;
+
+  
+}
+
+.humburger-icon{
+  display: none;
+}
+
+@media (max-width:838px) {
+  .header-div{
+    /* background-color: red; */
+
+}
+#nav-link{
+  display: none;
+  }
+
+ .humburger-icon{
+  display: block;
+  cursor: pointer;
+  /* z-index: -100; */
+ }
+ #my-links{
+  display: none;
+  
+ }
+ #my-links a{
+  display: block;
+  background-color: red;
+ }
+
+
+}

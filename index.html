@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script defer src="../js/icon.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="header-div">
+    <!-- Home, Browse, Search, Top Rated, New Releases, Recommendations, My List, Login/Sign Up, About, Contact, -->
+      <div class="nav">
+        <h2>
+          <span id="f">F</span>
+          <span id="x">X</span>
+        </h2>
+        <div id="search-box">
+          <form action="/search" method="get">
+            <input type="submit" value="Search" />
+            <input type="text" id="search" name="q" placeholder="Enter movie title or keyword" />
+            
+        </form>
+        </div>
+        <div id="nav-link">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Browse</a></li>
+            <li><a href="">New Releases</a></li>
+            <li><a href="">Upcoming</a></li>
+            <li><a href="">Recommendations</a></li>
+          </ul>
+        </div>
+
+        <div class="humburger-icon" onclick="myFunction()">
+          <i class="ri-menu-3-fill"></i>
+          <div id="my-links"><a href="#">Laptops</a>
+            <a href="#">Monitors</a>
+            <a href="#">Printers</a>
+          </div>
+          
+        </div>
+        
+  </header>
+
+</body>
+</html>
